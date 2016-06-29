@@ -1,0 +1,70 @@
+<!--A startup company wishes to build a web site for their online dating business. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+        <title>Dating Website</title>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+
+<body>
+<h2>Please Enter your details for our Dating Website</h2>
+
+    <form method= "post" enctype="multipart/form-data"
+            action= " https://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php">
+        <fieldset>
+                <legend> Your Face </legend> 
+                <label for ="image">Your Image:</label>  
+                <input type= "file" id="image" name= "avatar" required /> <br>
+                <label for="preview"> Preview: </label>
+                <img id= "preview"/>
+        </fieldset>
+        <fieldset>
+                <legend>Your General Details</legend>
+                <label for="name">Name</label> 
+                <input type="text" name="name" id="name" required> <br>
+                <label for ="gender" class="radio">Gender </label> 
+                <input type="radio" name="name" id= "gender" value="male"  checked> Male
+                <input type="radio" name="name" id= "gender" value= "female" > Female <br>
+                <label for="age">Age </label>
+                <input type="number" name="age" id= "age" required> <br>
+                <label for="dob">Date of birth</label> 
+                <input type="date" name="dob" id="dob"> <br>
+                <label for ="color">Favorite Color</label> 
+                <input type="color" name="color" id ="color"> <br>
+                <label for= "country">Which Country </label>
+                <select>
+                    <option value="NS" id= "country">Select One</option>
+                    <option value="VI" id= "country">Virgin Islands, U.S.</option>
+                    <option value="WF" id= "country">Wallis and Futuna</option>
+                    <option value="EH" id= "country">Western Sahara</option>
+                    <option value="YE" id= "country">Yemen</option>
+                    <option value="ZM" id= "country">Zambia</option>
+                    <option value="ZW" id= "country">Zimbabwe</option>
+                </select>
+        </fieldset>
+        <fieldset>
+                <legend>Your indicators</legend>
+                Height: Short<input type="range" name="height" min="0" max="100" step="1">Tall<br>
+                Salary: Poor<input type="range" name="salary" min="0" max="100" step="10">Rich <br>
+        </fieldset>
+        <fieldset>
+                <legend>Your Contact Information</legend>
+                <label for= "email">Email </label>
+                <input type="email" name="email" id= "email" required> <br>
+                <label for ="mobile">Mobile </label> 
+                <input type="tel" name="mobile" id= "mobile"> <br>
+                <label for= "address">Address </label>
+                <input type="text" name="address" id= "address" required> <br>
+                <label for= "contact" class="checkbox">Method to Contact you </label>
+                <input type="checkbox" name="email" id= "contact"> Email
+                <input type="checkbox" name="WhatsApp" id= "contact"> WhatsApp
+                <input type="checkbox" name="In-app" id= "contact"> in-App Chat
+        </fieldset>
+        <input type="submit" name="send" value="send">
+        <script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script>
+    </form>
+    <script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script>
+</body>
+</html>

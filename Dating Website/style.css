@@ -1,0 +1,28 @@
+fieldset {
+    background:lightyellow;
+    border:10px solid yellow;
+    margin-bottom:10px;
+    width: 720px;
+}
+
+label {
+    float: left;
+    width:180px;
+    display: inline-block;
+    text-align: right, top;
+}
+
+label:hover, input:hover { 
+    font-size: 40px ;
+}
+
+// labels of the checkboxes and radio needs to have width:auto
+.checkbox, .radio {
+    width: auto;
+}
+
+// Textarea needs to be width: 360px and height: 50px
+input[type="text"] {
+    width: 360px;
+    height: 50px;
+}
